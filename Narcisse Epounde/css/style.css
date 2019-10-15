@@ -1,0 +1,106 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif sans-serif;
+}
+
+.sections{
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+
+header {
+    height: auto;
+    padding: 10px 0;
+    position: relative;
+}
+
+header i .icon {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    z-index: 10;
+    display: none;
+}
+
+header .logo h2 {
+    font-size: 35px;
+    color: aqua;
+}
+
+header nav .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+/*
+header nav .nav-list .list{
+    display: inline;
+}
+*/
+
+header nav .nav-list .list a {
+    display: block;
+    padding: 15px,0;
+    margin: 10px 0;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    color: aqua;
+}
+
+header nav .nav-list .list a:hover {
+    color: goldenrod;
+}
+
+@media (max-width:575px) {
+    header nav .nav-list {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    header .logo {
+        text-align: center;
+    }
+
+    header i .icon {
+        display: none;
+    }
+}
+
+.home {
+    height: 450px;
+    background-image: url(../img/pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.home .home-title {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.home .home-desc {
+    color: white;
+    font-size: 20px;
+}
+
